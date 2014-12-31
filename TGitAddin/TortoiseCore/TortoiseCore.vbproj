@@ -73,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TNull.vb" />
     <Compile Include="IDEPath.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -91,6 +92,7 @@
     </Compile>
     <Compile Include="TGit.vb" />
     <Compile Include="TProcEngine.vb" />
+    <Compile Include="TPTypeCehck.vb" />
     <Compile Include="TSvn.vb" />
   </ItemGroup>
   <ItemGroup>

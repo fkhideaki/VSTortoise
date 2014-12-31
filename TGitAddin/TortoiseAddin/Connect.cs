@@ -203,8 +203,8 @@ namespace TortoiseAddin
 			_cmdList.AddCommand( "SVN_Log", (DTE2 vs_app) => (new TSvn( _applicationObject )).Log() );
 			_cmdList.AddCommand( "GIT_Diff", (DTE2 vs_app) => (new TGit( _applicationObject )).Diff() );
 			_cmdList.AddCommand( "GIT_Log", (DTE2 vs_app) => (new TGit( _applicationObject )).Log() );
-			_cmdList.AddCommand( "Tortoise_Diff", (DTE2 vs_app) => (new TGit( _applicationObject )).Diff() );
-			_cmdList.AddCommand( "Tortoise_Log", (DTE2 vs_app) => (new TGit( _applicationObject )).Log() );
+			_cmdList.AddCommand( "Tortoise_Diff", (DTE2 vs_app) => TPTypeCehck.GetEngine( _applicationObject).Diff() );
+			_cmdList.AddCommand( "Tortoise_Log", (DTE2 vs_app) => TPTypeCehck.GetEngine( _applicationObject).Log() );
 			_cmdList.AddCommand( "Dummy", null );
 
 			return _cmdList;
