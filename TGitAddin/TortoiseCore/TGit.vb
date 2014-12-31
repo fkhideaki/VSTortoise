@@ -6,7 +6,7 @@ Imports System.Diagnostics
 
 
 Public Class TGit
-	Inherits Tortoise
+	Inherits TProcEngine
 
 	Sub New(parent As DTE2)
 		MyBase.New(parent)

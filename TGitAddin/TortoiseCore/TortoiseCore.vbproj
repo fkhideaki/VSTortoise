@@ -90,7 +90,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="TGit.vb" />
-    <Compile Include="Tortoise.vb" />
+    <Compile Include="TProcEngine.vb" />
     <Compile Include="TSvn.vb" />
   </ItemGroup>
   <ItemGroup>

@@ -5,7 +5,7 @@ Imports EnvDTE100
 Imports System.Diagnostics
 
 
-Public MustInherit Class Tortoise
+Public MustInherit Class TProcEngine
 	Private DTE As DTE2 = Nothing
 
 	Sub New(parent As DTE2)
