@@ -199,26 +199,9 @@ namespace TGitAddin
 				return _cmdList;
 
 			_cmdList = new CommandList();
-			_cmdList.AddCommand("OpenTempEX0", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).OpenTempEX(0));
-			_cmdList.AddCommand("OpenTempEX1", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).OpenTempEX(1));
-			_cmdList.AddCommand("OpenTempEX2", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).OpenTempEX(2));
-			_cmdList.AddCommand("OpenTempEX3", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).OpenTempEX(3));
-			_cmdList.AddCommand("OpenTempEX4", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).OpenTempEX(4));
-			_cmdList.AddCommand("OpenTempEX5", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).OpenTempEX(5));
-			_cmdList.AddCommand("OpenTempEX6", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).OpenTempEX(6));
-			_cmdList.AddCommand("OpenTempEX7", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).OpenTempEX(7));
-			_cmdList.AddCommand("OpenTempEX8", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).OpenTempEX(8));
-			_cmdList.AddCommand("OpenTempEX9", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).OpenTempEX(9));
-			_cmdList.AddCommand("OpenPair_cpp_h", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).OpenPair_cpp_h());
-			_cmdList.AddCommand("ShowCurrentDocumentDir", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).ShowCurrentDocumentDir());
-			_cmdList.AddCommand("SetFindMultilineWithReg", (DTE2 vs_app) => (new DTEFind(_applicationObject)).SetMultilineFindTargetWithRegExprVS2012());
-			_cmdList.AddCommand("CustomFind", (DTE2 vs_app) => (new DTEFind(_applicationObject)).MakeCustomFindLinks());
-			_cmdList.AddCommand("CloseNextBrace", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).CloseNextBrace());
-			_cmdList.AddCommand("ClosePrevBrace", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).ClosePrevBrace());
-			_cmdList.AddCommand("SwitchIndentStyle", (DTE2 vs_app) => (new IDE_Utility(_applicationObject)).SwitchIndentStyle());
-			_cmdList.AddCommand("SVN_Diff", (DTE2 vs_app) => (new SVN(_applicationObject)).SVN_Diff());
-			_cmdList.AddCommand("SVN_Log", (DTE2 vs_app) => (new SVN(_applicationObject)).SVN_Log());
-			_cmdList.AddCommand("Dummy", null);
+			_cmdList.AddCommand( "Tortoise_Diff", (DTE2 vs_app) => (new TSvn( _applicationObject )).SVN_Diff() );
+			_cmdList.AddCommand( "Tortoise_Log", (DTE2 vs_app) => (new TSvn( _applicationObject )).SVN_Log() );
+			_cmdList.AddCommand( "Dummy", null );
 
 			return _cmdList;
 		}
