@@ -92,7 +92,6 @@
     <Compile Include="TGit.vb" />
     <Compile Include="Tortoise.vb" />
     <Compile Include="TSvn.vb" />
-    <Compile Include="utility.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

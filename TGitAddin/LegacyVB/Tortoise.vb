@@ -58,4 +58,19 @@ Public MustInherit Class Tortoise
 	Public Sub Log_CurrentDir()
 		ExecutePathCmd("log", GetCurrentDirPath())
 	End Sub
+
+	'現在のドキュメントのフルパスを返す
+	Function get_current_doc(DTE As DTE2, ByRef filename As String) As Boolean
+		filename = DTE.ActiveDocument.FullName
+		If Not System.IO.File.Exists(filename) Then Return False
+		Return True
+	End Function
+
+	'現在のドキュメントが保存されたディレクトリのフルパスを返す
+	Function get_current_doc_directory(DTE As DTE2, ByRef dirname As String) As Boolean
+		Dim filename As String = ""
+		If Not get_current_doc(DTE, filename) Then Return False
+		dirname = System.IO.Path.GetDirectoryName(filename)
+		Return True
+	End Function
 End Class
