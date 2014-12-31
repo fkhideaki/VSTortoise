@@ -73,13 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArrayGen.vb" />
     <Compile Include="DocumentType.vb" />
-    <Compile Include="EditorMove.vb" />
     <Compile Include="ExtTools.vb" />
     <Compile Include="FavoriteList.vb" />
     <Compile Include="Find.vb" />
-    <Compile Include="IDECompile.vb" />
     <Compile Include="IDE_Utility.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -96,13 +93,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ShortcutViewer.vb" />
     <Compile Include="TGit.vb" />
-    <Compile Include="tools.vb" />
     <Compile Include="Tortoise.vb" />
     <Compile Include="TSvn.vb" />
     <Compile Include="utility.vb" />
-    <Compile Include="VirtualKey.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
