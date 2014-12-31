@@ -19,8 +19,13 @@ Public Class TPTypeCehck
 		Do While (dir.Length >= 0)
 			If System.IO.Directory.Exists(dir + "\\" + ".git") Then Return EngineType.Git
 			If System.IO.Directory.Exists(dir + "\\" + ".svn") Then Return EngineType.Svn
-			Dim s As String = System.IO.Directory.GetParent(dir).ToString()
+
+			Dim di As System.IO.DirectoryInfo = System.IO.Directory.GetParent(dir)
+			If di Is Nothing Then Return EngineType.None
+
+			Dim s As String = di.ToString()
 			If s = dir Then Return EngineType.None
+			dir = s
 		Loop
 
 		Return EngineType.None
