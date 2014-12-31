@@ -10,7 +10,7 @@
     <StartupObject>
     </StartupObject>
     <NoStandardLibraries>false</NoStandardLibraries>
-    <AssemblyName>TGitAddin</AssemblyName>
+    <AssemblyName>TortoiseAddin</AssemblyName>
     <DeploymentDirectory>.\bin\</DeploymentDirectory>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
@@ -24,7 +24,7 @@
     <WarningLevel>4</WarningLevel>
     <IncrementalBuild>false</IncrementalBuild>
     <Prefer32Bit>false</Prefer32Bit>
-    <DocumentationFile>TGitAddin.xml</DocumentationFile>
+    <DocumentationFile>TortoiseAddin.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -35,10 +35,10 @@
     <WarningLevel>4</WarningLevel>
     <IncrementalBuild>false</IncrementalBuild>
     <Prefer32Bit>false</Prefer32Bit>
-    <DocumentationFile>TGitAddin.xml</DocumentationFile>
+    <DocumentationFile>TortoiseAddin.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <RootNamespace>TGitAddin</RootNamespace>
+    <RootNamespace>TortoiseAddin</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -118,10 +118,10 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TGitAddin - For Testing.AddIn">
-      <Link>TGitAddin - For Testing.AddIn</Link>
+    <Content Include="TortoiseAddin - For Testing.AddIn">
+      <Link>TortoiseAddin - For Testing.AddIn</Link>
     </Content>
-    <Content Include="TGitAddin.AddIn">
+    <Content Include="TortoiseAddin.AddIn">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>

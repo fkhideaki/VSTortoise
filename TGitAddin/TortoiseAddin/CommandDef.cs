@@ -7,7 +7,7 @@ using EnvDTE;
 using EnvDTE80;
 
 
-namespace TGitAddin
+namespace TortoiseAddin
 {
 	class CommandDef
 	{

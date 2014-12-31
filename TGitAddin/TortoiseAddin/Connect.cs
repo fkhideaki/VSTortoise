@@ -6,7 +6,7 @@ using Microsoft.VisualStudio.CommandBars;
 using System;
 
 
-namespace TGitAddin
+namespace TortoiseAddin
 {
 	/// <summary>アドインを実装するためのオブジェクトです。</summary>
 	/// <seealso class='IDTExtensibility2' />
@@ -221,7 +221,7 @@ namespace TGitAddin
 		private DTE2 _applicationObject;
 		private AddIn _addInInstance;
 
-		private string _rootName = "TGitAddin.Connect.";
+		private string _rootName = "TortoiseAddin.Connect.";
 
 		CommandList _cmdList = null;
 	}
