@@ -74,8 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DocumentType.vb" />
-    <Compile Include="ExtTools.vb" />
-    <Compile Include="FavoriteList.vb" />
     <Compile Include="Find.vb" />
     <Compile Include="IDE_Utility.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
