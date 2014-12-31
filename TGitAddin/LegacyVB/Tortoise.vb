@@ -40,22 +40,22 @@ Public MustInherit Class Tortoise
 	End Sub
 
 	' Diffウィンドウを表示
-	Public Sub SVN_Diff()
+	Public Sub Diff()
 		ExecutePathCmd("diff", GetCurrentFilePath())
 	End Sub
 
 	' Logウィンドウを表示
-	Public Sub SVN_Log()
+	Public Sub Log()
 		ExecutePathCmd("log", GetCurrentFilePath())
 	End Sub
 
 	' カレントディレクトリに対するDiffを実行
-	Public Sub SVN_Diff_CurrentDir()
+	Public Sub Diff_CurrentDir()
 		ExecutePathCmd("diff", GetCurrentDirPath())
 	End Sub
 
 	' カレントディレクトリに対するLogを実行
-	Public Sub SVN_Log_CurrentDir()
+	Public Sub Log_CurrentDir()
 		ExecutePathCmd("log", GetCurrentDirPath())
 	End Sub
 End Class

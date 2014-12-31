@@ -57,7 +57,7 @@ namespace TortoiseAddin
 			// 1.初回起動時なら→コマンドを作成.
 			// 2.コマンドをメニューに登録する.
 			// という流れが正しいがやり方がわからない.
-			string menu_root = "MyAddin (&A)";
+			string menu_root = "TortoiseAddin (&A)";
 			CommandBarControl toolsControl = null;
 			try
 			{
@@ -199,8 +199,12 @@ namespace TortoiseAddin
 				return _cmdList;
 
 			_cmdList = new CommandList();
-			_cmdList.AddCommand( "Tortoise_Diff", (DTE2 vs_app) => (new TSvn( _applicationObject )).SVN_Diff() );
-			_cmdList.AddCommand( "Tortoise_Log", (DTE2 vs_app) => (new TSvn( _applicationObject )).SVN_Log() );
+			_cmdList.AddCommand( "SVN_Diff", (DTE2 vs_app) => (new TSvn( _applicationObject )).Diff() );
+			_cmdList.AddCommand( "SVN_Log", (DTE2 vs_app) => (new TSvn( _applicationObject )).Log() );
+			_cmdList.AddCommand( "GIT_Diff", (DTE2 vs_app) => (new TGit( _applicationObject )).Diff() );
+			_cmdList.AddCommand( "GIT_Log", (DTE2 vs_app) => (new TGit( _applicationObject )).Log() );
+			_cmdList.AddCommand( "Tortoise_Diff", (DTE2 vs_app) => (new TGit( _applicationObject )).Diff() );
+			_cmdList.AddCommand( "Tortoise_Log", (DTE2 vs_app) => (new TGit( _applicationObject )).Log() );
 			_cmdList.AddCommand( "Dummy", null );
 
 			return _cmdList;
