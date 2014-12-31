@@ -6,7 +6,6 @@ Imports System.Diagnostics
 
 
 Public Class IDE_Utility
-
 	Dim DTE As DTE2
 
 	Public Sub New(dte2_instance As DTE2)
@@ -17,15 +16,6 @@ Public Class IDE_Utility
 		Dim ActWindow = DTE.ActiveDocument.ActiveWindow
 		Return ActWindow.Object.ActivePane
 	End Function
-
-	' 現在のドキュメントが保存されたディレクトリを表示する
-	Sub ShowCurrentDocumentDir()
-		Dim filename As String = ""
-		If Not get_current_doc(DTE, filename) Then Return
-		Dim dir_path As String = System.IO.Path.GetDirectoryName(filename)
-		dir_path = """" + dir_path + """"
-		DTE.ExecuteCommand("Tools.Shell", dir_path)
-	End Sub
 
 	' デバッグ出力ウィンドウをクリア
 	Sub ClearDebugOutputWindow()
