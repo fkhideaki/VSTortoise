@@ -30,25 +30,6 @@ Public Class IDE_Utility
 		ts.OutlineSection()
 	End Sub
 
-	' 現在の行番号をクリップボードに貼り付ける
-	Sub ClipCurrentLineNumber()
-		Dim ts As TextSelection = DTE.ActiveDocument.Selection
-		Dim CurrentLine As String = ts.ActivePoint.Line.ToString()
-
-		Dim ac As New AsyncClip
-		ac.Paste(CurrentLine)
-	End Sub
-
-	' 現在の括弧とついになる括弧を削除する
-	Public Sub RemoveBracePair()
-		DTE.ExecuteCommand("Edit.GotoBraceExtend")
-		Dim s As String = DTE.ActiveDocument.Selection.Text()
-		If (s.Length < 2) Then Return
-		If (s.IndexOf(vbCr) >= 0) Then Return
-		If (s.IndexOf(vbLf) >= 0) Then Return
-		DTE.ActiveDocument.Selection.Text = s.Substring(1, s.Length - 2)
-	End Sub
-
 
 	Function GetActivePane()
 		Dim ActWindow = DTE.ActiveDocument.ActiveWindow
