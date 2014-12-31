@@ -5,9 +5,10 @@ Imports EnvDTE100
 Imports System.Diagnostics
 
 
-Public Class Tortoise
+Public MustInherit Class Tortoise
 	Private DTE As DTE2 = Nothing
-	Private tp_path As String = """TortoiseProc.exe"""
+
+	Protected MustOverride Function GetTPName() As String
 
 	Sub New(parent As DTE2)
 		DTE = parent
@@ -16,7 +17,7 @@ Public Class Tortoise
 	Private Function CreateCmd(cmd As String, path As String) As String
 		Dim sc As String = " /command:" + cmd
 		Dim sp As String = " /path:" + """" + path + """"
-		Return tp_path + sc + sp + " /notempfile"
+		Return GetTPName() + sc + sp + " /notempfile"
 	End Function
 
 	Private Function GetCurrentFilePath() As String
@@ -39,22 +40,22 @@ Public Class Tortoise
 	End Sub
 
 	' Diffウィンドウを表示
-	Sub SVN_Diff()
+	Public Sub SVN_Diff()
 		ExecutePathCmd("diff", GetCurrentFilePath())
 	End Sub
 
 	' Logウィンドウを表示
-	Sub SVN_Log()
+	Public Sub SVN_Log()
 		ExecutePathCmd("log", GetCurrentFilePath())
 	End Sub
 
 	' カレントディレクトリに対するDiffを実行
-	Sub SVN_Diff_CurrentDir()
+	Public Sub SVN_Diff_CurrentDir()
 		ExecutePathCmd("diff", GetCurrentDirPath())
 	End Sub
 
 	' カレントディレクトリに対するLogを実行
-	Sub SVN_Log_CurrentDir()
+	Public Sub SVN_Log_CurrentDir()
 		ExecutePathCmd("log", GetCurrentDirPath())
 	End Sub
 End Class

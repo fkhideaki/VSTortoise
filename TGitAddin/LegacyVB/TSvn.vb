@@ -5,7 +5,7 @@ Imports EnvDTE100
 Imports System.Diagnostics
 
 
-Public Class TGit
+Public Class TSvn
 	Inherits Tortoise
 
 	Sub New(parent As DTE2)
@@ -13,6 +13,6 @@ Public Class TGit
 	End Sub
 
 	Protected Overrides Function GetTPName() As String
-		Return """TortoiseGitProc.exe"""
+		Return """TortoiseProc.exe"""
 	End Function
 End Class

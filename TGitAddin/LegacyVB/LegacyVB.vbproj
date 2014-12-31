@@ -97,8 +97,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="ShortcutViewer.vb" />
-    <Compile Include="Subversion.vb" />
+    <Compile Include="TGit.vb" />
     <Compile Include="tools.vb" />
+    <Compile Include="Tortoise.vb" />
+    <Compile Include="TSvn.vb" />
     <Compile Include="utility.vb" />
     <Compile Include="VirtualKey.vb" />
   </ItemGroup>
