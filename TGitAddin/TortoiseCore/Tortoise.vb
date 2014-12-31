@@ -42,13 +42,13 @@ Public MustInherit Class Tortoise
 
 	Private Function GetCurrentFilePath() As String
 		Dim filename As String = ""
-		If Not GetCurrentDoc(DTE, filename) Then Return Nothing
+		If Not IDEPath.GetCurrentDoc(DTE, filename) Then Return Nothing
 		Return filename
 	End Function
 
 	Private Function GetCurrentDirPath() As String
 		Dim dirname As String = ""
-		If Not GetCurrentDocDir(DTE, dirname) Then Return Nothing
+		If Not IDEPath.GetCurrentDocDir(DTE, dirname) Then Return Nothing
 		Return dirname
 	End Function
 
@@ -58,18 +58,4 @@ Public MustInherit Class Tortoise
 		Dim cmdline As String = CreateCmd(cmd, path)
 		DTE.ExecuteCommand("Tools.Shell", cmdline)
 	End Sub
-
-	'現在のドキュメントのフルパスを返す
-	Private Function GetCurrentDoc(DTE As DTE2, ByRef filename As String) As Boolean
-		filename = DTE.ActiveDocument.FullName
-		Return System.IO.File.Exists(filename)
-	End Function
-
-	'現在のドキュメントが保存されたディレクトリのフルパスを返す
-	Private Function GetCurrentDocDir(DTE As DTE2, ByRef dirname As String) As Boolean
-		Dim filename As String = ""
-		If Not GetCurrentDoc(DTE, filename) Then Return False
-		dirname = System.IO.Path.GetDirectoryName(filename)
-		Return True
-	End Function
 End Class
