@@ -126,9 +126,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LegacyVB\LegacyVB.vbproj">
+    <ProjectReference Include="..\TortoiseCore\TortoiseCore.vbproj">
       <Project>{af5414e2-3a7d-479e-997b-16ecb412df23}</Project>
-      <Name>LegacyVB</Name>
+      <Name>TortoiseCore</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />

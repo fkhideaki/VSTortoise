@@ -1,7 +1,7 @@
 ﻿using EnvDTE;
 using EnvDTE80;
 using Extensibility;
-using LegacyVB;
+using TortoiseCore;
 using Microsoft.VisualStudio.CommandBars;
 using System;
 

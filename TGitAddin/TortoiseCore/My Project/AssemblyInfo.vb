@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' アセンブリ属性の値を確認します。
 
-<Assembly: AssemblyTitle("LegacyVB")> 
+<Assembly: AssemblyTitle("TortoiseCore")> 
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("UNITCOM PC")> 
-<Assembly: AssemblyProduct("LegacyVB")> 
-<Assembly: AssemblyCopyright("Copyright © UNITCOM PC 2012")> 
+<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyProduct("TortoiseCore")> 
+<Assembly: AssemblyCopyright("")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>

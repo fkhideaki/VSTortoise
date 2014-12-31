@@ -64,9 +64,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.LegacyVB.My.MySettings
+        Friend ReadOnly Property Settings() As Global.TortoiseCore.My.MySettings
             Get
-                Return Global.LegacyVB.My.MySettings.Default
+                Return Global.TortoiseCore.My.MySettings.Default
             End Get
         End Property
     End Module
