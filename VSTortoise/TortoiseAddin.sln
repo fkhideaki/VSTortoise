@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TortoiseAddin", "TortoiseAddin\TortoiseAddin.csproj", "{54C786E5-FD14-4036-92AE-E9F25B71534B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TortoiseCore", "TortoiseCore\TortoiseCore.vbproj", "{AF5414E2-3A7D-479E-997B-16ECB412DF23}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TCoreTest", "TCoreTest\TCoreTest.vbproj", "{45C08A12-C363-477A-BC4E-37105FA30990}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54C786E5-FD14-4036-92AE-E9F25B71534B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C786E5-FD14-4036-92AE-E9F25B71534B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C786E5-FD14-4036-92AE-E9F25B71534B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C786E5-FD14-4036-92AE-E9F25B71534B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF5414E2-3A7D-479E-997B-16ECB412DF23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5414E2-3A7D-479E-997B-16ECB412DF23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF5414E2-3A7D-479E-997B-16ECB412DF23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5414E2-3A7D-479E-997B-16ECB412DF23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C08A12-C363-477A-BC4E-37105FA30990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C08A12-C363-477A-BC4E-37105FA30990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C08A12-C363-477A-BC4E-37105FA30990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C08A12-C363-477A-BC4E-37105FA30990}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
